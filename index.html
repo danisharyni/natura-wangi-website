@@ -1,115 +1,145 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Natura Wangi Nusantara</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      padding: 0;
-      background: #faf6f2;
+      background: #faf7f2;
       color: #333;
     }
     header {
-      background-color: #6b8e79;
-      color: white;
-      padding: 30px;
+      background: linear-gradient(90deg, #c1e1dc, #e4d1ec);
+      padding: 40px 20px;
       text-align: center;
-    }
-    h1 {
-      margin: 0;
+      color: #2d403c;
     }
     section {
-      padding: 40px 20px;
+      padding: 50px 20px;
       max-width: 1000px;
       margin: auto;
     }
     h2 {
-      color: #4b6651;
-    }
-    .product-gallery {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .product-gallery img {
-      width: 250px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    .contact {
-      background: #f0ede7;
-      padding: 30px 20px;
+      color: #5b7b6e;
+      margin-bottom: 20px;
       text-align: center;
+    }
+    .swiper {
+      width: 100%;
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+    .swiper-slide {
+      background: #fff;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .swiper-slide:hover {
+      transform: translateY(-5px);
+    }
+    .swiper-slide img {
+      width: 100%;
+      border-radius: 12px 12px 0 0;
+    }
+    .slide-content {
+      padding: 20px;
+    }
+    .contact, footer {
+      background: #ece6dc;
+      text-align: center;
+      padding: 30px 20px;
     }
     footer {
-      background: #4b6651;
+      background: #5b7b6e;
       color: white;
-      text-align: center;
-      padding: 20px;
     }
     a {
       color: #6b8e79;
       text-decoration: none;
     }
-    a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Natura Wangi Nusantara 🌿</h1>
+    <p>Menghadirkan kenyamanan dan keharuman alami ke dalam hidup Anda</p>
+  </header>
 
-<header>
-  <h1>Natura Wangi Nusantara 🌿</h1>
-  <p>Menghadirkan kenyamanan dan keharuman alami ke dalam hidup Anda</p>
-</header>
+  <section>
+    <h2>🌸 SENÉ Diffuser</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">SENÉ Diffuser adalah solusi aromaterapi modern yang menghadirkan kenyamanan, ketenangan, dan kesegaran ke dalam ruang pribadi Anda. Dengan desain elegan dan teknologi difusi yang optimal, SENÉ Diffuser membantu menciptakan suasana yang mendukung relaksasi, fokus, atau tidur yang lebih nyenyak.</p>
 
-<section>
-  <h2>🌸 SENÉ Diffuser</h2>
-  <p><strong>SENÉ Diffuser</strong> adalah solusi aromaterapi modern yang menghadirkan kenyamanan, ketenangan, dan kesegaran ke dalam ruang pribadi Anda. Dengan desain elegan dan teknologi difusi yang optimal, SENÉ Diffuser membantu menciptakan suasana yang mendukung relaksasi, fokus, atau tidur yang lebih nyenyak.</p>
-  <h3>Varian:</h3>
-  <ul>
-    <li><strong>🌼 ÉLAN:</strong> Citrus & white tea yang segar dan fokus</li>
-    <li><strong>🌳 TERRA:</strong> Cendana & amber yang menenangkan</li>
-    <li><strong>🌙 LUNE:</strong> Lavender & vanilla untuk tidur nyenyak</li>
-  </ul>
-  <div class="product-gallery">
-    <img src="elan.jpg" alt="SENE Diffuser Élan">
-    <img src="terra.jpg" alt="SENE Diffuser Terra">
-    <img src="lune.jpg" alt="SENE Diffuser Lune">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="elan.jpg" alt="ÉLAN">
+          <div class="slide-content">
+            <h3>ÉLAN</h3>
+            <p>Citrus & white tea — menyegarkan dan fokus.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="terra.jpg" alt="TERRA">
+          <div class="slide-content">
+            <h3>TERRA</h3>
+            <p>Kayu cendana & amber — menenangkan alami.</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="lune.jpg" alt="LUNE">
+          <div class="slide-content">
+            <h3>LUNE</h3>
+            <p>Lavender & vanilla — tidur lebih nyenyak.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>🌿 TETES Essential Oil</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Essential oil alami untuk berbagai kebutuhan aromaterapi dan relaksasi. Setiap tetes mengandung kebaikan murni dari alam. Tersedia berbagai varian yang menenangkan dan menyegarkan.</p>
+    <div style="text-align:center; margin-top:30px;">
+      <img src="tetes.jpg" alt="TETES Essential Oil" style="max-width:300px; border-radius:12px;">
+    </div>
+  </section>
+
+  <section>
+    <h2>💚 Minyak Herba Sinergi</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">Minyak Herba Sinergi (MHS) adalah produk herbal berbentuk minyak gosok yang dikembangkan oleh Herbal Penawar Alwahida Indonesia (HPAI). Mengandung berbagai minyak esensial alami yang dipercaya bermanfaat untuk kesehatan.</p>
+    <div style="text-align:center; margin-top:30px;">
+      <img src="mhs.jpg" alt="Minyak Herba Sinergi" style="max-width:300px; border-radius:12px;">
+    </div>
+  </section>
+
+  <div class="contact">
+    <h2>📍 Kontak Kami</h2>
+    <p><strong>Alamat:</strong> Komplek PU Sapta Taruna IV, JL. Koperpu 16, Blok C No.97, Kota Bekasi, Jawa Barat</p>
+    <p><strong>Telepon:</strong> +62 88213255863</p>
+    <p><strong>Email:</strong> <a href="mailto:naturawanginusantara@gmail.com">naturawanginusantara@gmail.com</a></p>
   </div>
-</section>
 
-<section>
-  <h2>🌿 TETES Essential Oil</h2>
-  <p>Essential oil alami untuk berbagai kebutuhan aromaterapi dan relaksasi. Setiap tetes mengandung kebaikan murni dari alam. Tersedia berbagai varian yang menenangkan dan menyegarkan.</p>
-  <div class="product-gallery">
-    <img src="tetes.jpg" alt="TETES Essential Oil">
-  </div>
-</section>
+  <footer>
+    <p>© 2025 PT Natura Wangi Nusantara. All rights reserved.</p>
+  </footer>
 
-<section>
-  <h2>💚 Minyak Herba Sinergi</h2>
-  <p><strong>Minyak Herba Sinergi (MHS)</strong> adalah produk herbal berbentuk minyak gosok yang dikembangkan oleh Herbal Penawar Alwahida Indonesia (HPAI). Minyak ini dikenal luas karena mengandung berbagai jenis minyak esensial alami yang dipercaya bermanfaat untuk kesehatan.</p>
-  <div class="product-gallery">
-    <img src="mhs.jpg" alt="Minyak Herba Sinergi">
-  </div>
-</section>
-
-<div class="contact">
-  <h2>📍 Kontak Kami</h2>
-  <p><strong>Alamat:</strong> Komplek PU Sapta Taruna IV, JL. Koperpu 16, Blok C No.97, Kota Bekasi, Jawa Barat</p>
-  <p><strong>Telepon:</strong> +62 88213255863</p>
-  <p><strong>Email:</strong> <a href="mailto:naturawanginusantara@gmail.com">naturawanginusantara@gmail.com</a></p>
-</div>
-
-<footer>
-  <p>© 2025 PT Natura Wangi Nusantara. All rights reserved.</p>
-</footer>
-
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 </body>
 </html>
